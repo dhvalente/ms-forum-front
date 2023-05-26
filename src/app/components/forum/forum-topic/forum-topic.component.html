@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<div class="container" style="height: 250px; margin-top: 0px;">
+<img src="../../assets/imagens/forum-logo.png" class="forum-logo" alt="Pergaminho escrito forúm nerdbuddies" />
+</div>
+<div class="container forum-topic-page">
+
+  <div style="text-align: right;">
+    <button class="btn btn-outline-primary" [routerLink]="['/create-post']" routerLinkActive="router-link-active"  type="button" id="create-button">Ciar Postagem</button>
+  </div>
+
+  <div class="input-group input-group-lg">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Minhas Postagens</button>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Todas</button>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Pesquisar</button>
+
+  </div>
+
+  <div class="container tabela">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="col-author">Autor</th>
+          <th scope="col" class="col-topic">Titulo</th>
+          <th scope="col" class="col-comment">Comentarios</th>
+          <th></th> <!-- Coluna extra para o botão de exclusão -->
+          <th></th> <!-- Coluna extra para o botão de atualização -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="line-table" *ngFor="let p of posts">
+          <td>{{p.authorId}}</td>
+          <td>{{p.title}}</td>
+          <td>{{p.topic}}</td>
+          <td class="button-col"> <!-- Coluna com o botão de exclusão -->
+            <button class="btn btn-danger btn-sm" (click)="openConfirmationModal(content, p.title)">
+              <i class="bi bi-trash"></i> <!-- Ícone de exclusão do Bootstrap -->
+            </button>
+            <ng-template #content let-modal>
+              <div class="modal-body">
+                <p>Deseja realmente deletar o post  <strong>{{p.title}}</strong> ?</p>
+                <div class="alert alert-success" role="alert" *ngIf="showSuccess">
+                  Postagem deletada com sucesso!
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" (click)="modal.dismiss()">Cancelar</button>
+                <button class="btn btn-danger" (click)="deletePost(modal, p.id ?? '')">Deletar</button>
+              </div>
+            </ng-template>
+          </td>
+          <td class="button-col"> <!-- Coluna com o botão de atualização -->
+            <button class="btn btn-primary btn-sm" (click)="updatePost(p)">
+              <i class="bi bi-pencil"></i> <!-- Ícone de edição do Bootstrap -->
+            </button>
+          </td>
+          <td class="button-col"> <!-- Coluna com o botão de atualização -->
+            <button class="btn btn-success  btn-sm" type="button" routerLink="/list-post/{{p.id}}">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+  width: auto;
+  height: 100vh;;
+  background-image:url(../../../assets/imagens/fundo-login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@font-face {
+  font-family: "Naruto";
+  src: url(../../../assets/fontes/njnaruto.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "One Piece";
+  src: url(../../../assets/fontes/onepiece.ttf) format("truetype");
+}
+
+h2{
+  text-align: center;
+  font-family: "One Piece", Arial, sans-serif;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.container {
+    height: 60%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.transparent-box {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group input[type="text"]::placeholder,
+.input-group input[type="password"]::placeholder {
+  font-family: "Naruto", Arial, sans-serif;
+}
+
+.divider {
+    margin: 50px 0 40px 30px;
+    border-top: 1px solid #ccc;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Naruto", Arial, sans-serif;
+}
+
+.button-google {
+    background-color: #dd4b39;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+    font-family: "Naruto", Arial, sans-serif;
+}
+
+.button-google img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.anchor {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-family: "Naruto", Arial, sans-serif;
+}
+
+.error-message{
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+
+}

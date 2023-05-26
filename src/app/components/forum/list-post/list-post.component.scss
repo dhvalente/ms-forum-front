@@ -1,0 +1,59 @@
+
+#div-button-like-comment{
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: end;
+}
+
+#card-body-comment{
+
+}
+
+
+#button-like-comment{
+display: inline;
+background-color:#198754;
+color: #FFD700;
+border-style: none;
+border-radius: 15px 15px 15px 15px;
+
+}
+#icon-button-comment{
+    background-color: #198754;
+    //color: #198754;
+}
+
+#form-comment{
+  margin-bottom: 500px;
+}
+.blue-divider {
+  border-top: 2px solid blue;
+}
+
+#button-comment{
+  background-color: #2d764b;
+  margin-bottom: 500px;
+  width: 30%;
+  border-style: none;
+}
+
+#button-comment:hover{
+  width: 35%;
+  height: 50px;
+}
+#button-comment:active{
+  background-color: #002244;
+}
+#comentario{
+  height: 150px;
+}
+#cancel-comment{
+margin-right: 10px;
+background-color: #002244;
+border-style: none;
+}
+
+#add-comment{
+  background-color: #2d764b;
+  border-style: none;
+}

@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+<div class="container-sm" id="div-inputs">
+  <img src="../../assets/imagens/criar.png" id="criar-post" class="position-absolute translate-middle" alt="Escudo escrito ideias brilhantes começam aqui." />
+<form [formGroup]="form">
+  <div class="mb-3">
+    <div class="alert alert-success" role="alert" *ngIf="showSuccess">
+      Postagem criada com sucesso!
+    </div>
+    <label for="exampleFormControlInput1" class="form-label">Título</label>
+    <input class="form-control" id="input-title" formControlName="title">
+  </div>
+  <div class="input-group mb-3" id="select-topic">
+    <label class="input-group-text" for="inputGroupSelect02">Assunto</label>
+    <select class="form-select" formControlName="topic" id="inputGroupSelect02">
+      <option selected>Selecione...</option>
+      <option value="Animes">Animes</option>
+      <option value="Cientifico">Cientifico</option>
+      <option value="Filmes">Filmes</option>
+      <option value="Jogos">Jogos</option>
+      <option value="Música">Música</option>
+      <option value="Tecnologia">Tecnologia</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Digite aqui o conteúdo da postagem: </label>
+    <div>
+      <span class="error-message mb-2" *ngIf="form.get('content')?.errors?.['required'] && form.get('content')?.touched">Conteúdo da postagem é obrigatório!</span>
+    </div>
+    <div>
+      <span class="error-message mb-2" *ngIf="form.get('content')?.errors?.['minlength']">Conteúdo precisa ter no mínimo 10 caracteres!</span>
+    </div>
+    <textarea class="form-control" id="input-content" rows="12" formControlName="content"></textarea>
+  </div>
+  <span class="div-buttons">
+    <button class="btn btn-primary btn-lg" type="button" id="button-return" [routerLink]="['/forum-topic']" routerLinkActive="router-link-active">Voltar</button>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="teste">
+      <button class="btn btn-primary btn-lg" type="button" id="button-create" [disabled]="!form.valid" (click)="createPost()">Criar Postagem</button>
+    </div>
+
+  </span>
+</form>
+</div>
+
+
+<app-footer></app-footer>

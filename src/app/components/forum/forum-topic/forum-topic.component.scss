@@ -1,0 +1,105 @@
+
+.forum-topic-page {
+  margin-top: 150px;
+}
+.tabela {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+}
+
+.table {
+}
+
+.col:hover {
+  background-color: darkgrey;
+}
+
+.col-author {
+  width: 30%;
+}
+
+.col-author:hover {
+  width: 30%;
+  background-color: darkgrey;
+}
+
+.col-topic {
+  border-style: solid 5px 5px 5px 5px;
+}
+
+.col-topic:hover {
+  background-color: darkgrey;
+}
+
+.col-comment {
+}
+
+.col-comment:hover {
+  background-color: darkgrey;
+}
+
+.line-table{
+
+}
+
+.line-table:hover{
+  background-color: darkgrey;
+}
+
+.forum-logo{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:300;
+  margin: auto;
+  position: absolute;
+}
+
+#button-addon1{
+  width: 200px;
+}
+
+#button-addon1:hover{
+  color:#FFFFFF;
+  background-color: #2d764b;
+  width: 200px;
+}
+
+#button-addon1:active{
+  color:#FFFFFF;
+  background-color:#002244;
+  width: 200px;
+}
+
+#create-button{
+  margin-bottom: 30px;
+  background-color: #2d764b;
+  color: #FFFFFF;
+  border-color: #002244;
+  height: 50px;
+  width: 200px;
+}
+
+#create-button:hover{
+
+  background-color: #2d764b;
+  color: #FFFFFF;
+  border-color: #002244;
+  height: 60px;
+  width: 210px;
+}
+
+#create-button:active{
+
+  background-color: #002244;
+  color: #FFFFFF;
+  border-color: #002244;
+  height: 60px;
+  width: 210px;
+}
+
+.button-col{
+  width: 50px;
+}

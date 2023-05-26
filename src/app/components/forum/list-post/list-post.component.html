@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<div class="container mb-5 d-flex flex-column" id="main">
+
+  <!-- Postagem -->
+  <section class="card mb-4 mt-4">
+    <div class="card-body">
+      <h2 class="card-title">{{post.title}}</h2>
+      <p class="card-text">{{post.content}}</p>
+      <button class="btn btn-primary mr-2" (click)="curtirPostagem()">Curtir</button>
+      <span class="badge badge-pill badge-primary">{{ curtidasPostagem }}</span>
+    </div>
+  </section>
+
+  <!-- Comentários -->
+  <section *ngFor="let comment of comments" class="card mb-4 p-0 border-0" id="comment">
+    <div class="card-body" id="card-body-comment">
+      <p class="card-text" id="card-text-comment">{{ comment.content }}</p>
+      <span class="badge badge-pill badge-primary">{{ comment.numberOfLikes }}</span>
+    </div>
+    <hr class="blue-divider">
+  </section>
+
+  <!-- Botão para comentar -->
+  <div class="text-center">
+    <button class="btn btn-primary mb-5" (click)="exibirFormulario = true" id="button-comment">Comentar</button>
+  </div>
+
+  <!-- Formulário para comentário -->
+  <form *ngIf="exibirFormulario" class="card mb-5" id="form-comment" (ngSubmit)="addComment()">
+    <div class="alert alert-success" role="alert" *ngIf="showSuccess">
+      Comentário criado com sucesso!
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="comentario">Digite seu comentário:</label>
+        <textarea id="comentario" name="comentario" class="form-control" [(ngModel)]="content" required></textarea>
+      </div>
+      <div class="card-body d-flex justify-content-end">
+        <button class="btn btn-secondary mt-3" type="button" (click)="cancelComment()" id="cancel-comment">Cancelar</button>
+        <button class="btn btn-primary mt-3" type="submit" id="add-comment">Adicionar Comentário</button>
+      </div>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>

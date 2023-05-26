@@ -1,0 +1,34 @@
+
+<body>
+  <div class="container">
+    <form [formGroup]="form">
+      <div class="transparent-box">
+          <h2>Acesse sua conta</h2>
+          <div class="alert alert-success" role="alert" *ngIf="showSuccess">
+            Login efetuado com sucesso!
+          </div>
+          <div class="input-group">
+              <div>
+                <span class="error-message mb-2" *ngIf="form.get('email')?.errors?.['required']">O email é obrigatório.</span>
+              </div>
+              <input type="text" placeholder="Email" formControlName="email">
+          </div>
+          <div>
+            <span class="error-message mb-2" *ngIf="form.get('password')?.errors?.['required']">A senha é obrigatória.</span>
+          </div>
+          <div class="input-group">
+              <input type="password" placeholder="Senha" formControlName="password">
+          </div>
+          <button class="button" (click)="login()">Entrar</button>
+          <a href="#" class="anchor">Esqueceu sua senha?</a>
+          <div class="divider"></div>
+          <button class="button button-google">
+              <img src="../../assets/imagens/google.png" class="card-img-top" alt="Logo da google" />
+              Conectar com Google
+          </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+

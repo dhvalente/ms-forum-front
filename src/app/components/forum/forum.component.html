@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+<header class="header">
+  <h1 class="titulo-assunto">Escolha por assunto :</h1>
+</header>
+
+<div class="container" [routerLink]="['/forum-topic']" routerLinkActive="router-link-active" >
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem" id="card-animes">
+        <img src="../../assets/imagens/animes.jpg" class="card-img-top" alt="Imagem de vários animes" />
+        <div class="card-body">
+          <h5 class="card-title">Animes</h5>
+          <p class="card-text">
+            Descobrindo personagens cativantes e histórias emocionantes
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img src="../../assets/imagens/ciencia.jpg" class="card-img-top" alt="Imagem de objetos utilizados em laboratorio com ciência escrito no meio" />
+        <div class="card-body">
+          <h5 class="card-title">Científico</h5>
+          <p class="card-text">
+            Investigando o universo com ciência e tecnologia
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img src="../../assets/imagens/series.jpg" class="card-img-top" alt="Imagem de séries e animes" />
+        <div class="card-body">
+          <h5 class="card-title">Filmes e séries</h5>
+          <p class="card-text">
+            Comentando e analisando filmes e séries de TV
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img src="../../assets/imagens/games.jpg" class="card-img-top" alt="Imagem de várias fitas de supernintendo e outros videosgames" />
+        <div class="card-body">
+          <h5 class="card-title">Jogos</h5>
+          <p class="card-text">
+            Competindo e se divertindo em jogos eletrônicos
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img src="../../assets/imagens/musica.jpg" class="card-img-top" alt="Imagem com vários desenhos e Music escrito no meio" />
+        <div class="card-body">
+          <h5 class="card-title">Música</h5>
+          <p class="card-text">
+            Discutindo as melhores bandas e artistas musicais
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img src="../../assets/imagens/tecnologia.jpg" class="card-img-top" alt="Imagem de uma mão com vários simbolos de tecnologia saindo dela" />
+        <div class="card-body">
+          <h5 class="card-title">Tecnologia</h5>
+          <p class="card-text">
+            Conhecendo as últimas novidades em gadgets e dispositivos eletrônicos
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

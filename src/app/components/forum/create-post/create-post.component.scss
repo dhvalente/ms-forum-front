@@ -1,0 +1,46 @@
+#div-inputs{
+  margin-top: 12%;
+  margin-bottom: 230px;
+  width: 40%;
+}
+
+#input-content{
+  height: 40%;
+}
+
+#button-create{
+  background-color: #2d764b;
+  border-style: none;
+}
+
+
+#button-return{
+  align-items: end;
+  background-color: #002244;
+  border-style: none;
+}
+
+.div-buttons{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+#select-topic{
+  margin-top: 30px;
+  width: 50% ;
+}
+
+.error-message{
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+#criar-post{
+  height: 250px;
+  left: 50%;
+  top: 20%;
+}
