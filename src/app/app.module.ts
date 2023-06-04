@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListPostComponent } from './components/forum/list-post/list-post.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './service/login/auth.interceptor';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AuthInterceptor } from './service/login/auth.interceptor';
     ForumTopicComponent,
     CreatePostComponent,
     ListPostComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

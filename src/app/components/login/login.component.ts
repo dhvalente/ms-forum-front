@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
       this.service.login(this.form.value).subscribe((postReturn) => {
         this.showSuccess = true;
         setTimeout(() => {
-          this.router.navigateByUrl('forum-topic');
+          this.router.navigateByUrl('forum-homepage');
         }, 800); // delay de 2 segundos
       });
     }

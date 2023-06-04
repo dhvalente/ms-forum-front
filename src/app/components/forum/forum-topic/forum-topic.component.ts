@@ -23,6 +23,7 @@ export class ForumTopicComponent implements OnInit {
     title: '',
     content: '',
     authorId: '',
+    authorName: '',
     topic: '',
   };
 

@@ -1,9 +1,10 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Login } from 'src/app/model/login';
 import { TokenJWT } from 'src/app/model/tokenJWT';
 import { tap } from 'rxjs/operators';
+import { User } from 'src/app/model/user';
 
 
 @Injectable({
@@ -25,6 +26,4 @@ export class LoginService {
       })
     );
   }
-
-
 }

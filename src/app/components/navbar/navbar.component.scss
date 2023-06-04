@@ -1,23 +1,54 @@
-#navbar-logged{
-  background: rgb(0,34,68);
-  background: linear-gradient(90deg, rgba(0,34,68,1) 46%, rgba(29,88,73,1) 59%, rgba(45,118,75,1) 71%);
-
-}
-.nav-link {
-  color: aliceblue;
-  font-size: 20px;
+header{
+  background-image:url(../../../assets/imagens/navbar-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 6vh;
 }
 
-#navbarNavAltMarkup{
+a{
+  font-family: "Naruto", Arial, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  //font-weight: 700;
 
 }
 
-#navbar-sair{
-  margin-right: 2%;
-  justify-content: end;
+.nav__link{
+  color: orange;
+
 }
 
-.navbar-nav{
-  gap: 50px;
+.nav__link:hover{
+  color: #e76e37;
+  font-size: 24px;
 }
 
+.nav__icon {
+  transform: scale(1.3);
+  display: inline-block;
+  color: orange;
+ // color: #e76e37;
+}
+
+.primeiro__grupo__navbar{
+  margin-left: 100px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.segundo__grupo__navbar{
+  align-items: center;
+  margin-right: 100px;
+  display: flex;
+  gap: 30px;
+}
+
+
+@font-face {
+  font-family: "Naruto";
+  src: url(../../../assets/fontes/njnaruto.ttf) format("truetype");
+}

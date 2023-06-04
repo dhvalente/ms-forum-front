@@ -1,13 +1,34 @@
 .footer {
-  font-family: 'Freckle Face', cursive;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: #2d764b;
-  background: rgb(0,34,68);
-  background: linear-gradient(90deg, rgba(0,34,68,1) 46%, rgba(29,88,73,1) 59%, rgba(45,118,75,1) 71%);
-  color: #FFFFFF;
+  background-image:url(../../../assets/imagens/navbar-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: orange;
   text-align: center;
-  padding: 10px 0;
+  font-family: "Naruto", Arial, sans-serif;
+  padding-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.footer h6 {
+  font-size:20px;
+}
+
+.footer p {
+  font-size: 20x;
+}
+
+@font-face {
+  font-family: "Naruto";
+  src: url(../../../assets/fontes/njnaruto.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "One Piece";
+  src: url(../../../assets/fontes/onepiece.ttf) format("truetype");
 }

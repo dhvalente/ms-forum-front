@@ -1,7 +1,21 @@
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "One Piece", Arial, sans-serif;
+  font-size: 80px;
+  color: #e76e37
+}
+
+
+@font-face {
+  font-family: "One Piece";
+  src: url(../../../../assets/fontes/onepiece.ttf) format("truetype");
+}
 
 .forum-topic-page {
-  margin-top: 150px;
+  margin-top: 80px;
 }
+
 .tabela {
   width: 100%;
   margin-top: 30px;
@@ -9,7 +23,21 @@
   border-radius: 10px;
 }
 
-.table {
+.table {}
+
+#editar {
+  background-color: #e76e37;
+  border-color: #e76e37;
+}
+
+#excluir {
+  background-color: #d01f2f;
+  border-color: #d01f2f;
+}
+
+#acessar {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
 }
 
 .col:hover {
@@ -33,73 +61,63 @@
   background-color: darkgrey;
 }
 
-.col-comment {
-}
+.col-comment {}
 
 .col-comment:hover {
   background-color: darkgrey;
 }
 
-.line-table{
+.line-table {}
 
-}
-
-.line-table:hover{
+.line-table:hover {
   background-color: darkgrey;
 }
 
-.forum-logo{
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom:300;
-  margin: auto;
-  position: absolute;
-}
-
-#button-addon1{
+#button-addon1 {
   width: 200px;
 }
 
-#button-addon1:hover{
-  color:#FFFFFF;
-  background-color: #2d764b;
+#button-addon1:hover {
+  color: #FFFFFF;
+  background-color: orange;
+  border-color: orange;
   width: 200px;
 }
 
-#button-addon1:active{
-  color:#FFFFFF;
-  background-color:#002244;
+#button-addon1:active {
+  color: #FFFFFF;
+  background-color: #335daa;
+  border-color: #335daa;
   width: 200px;
 }
 
-#create-button{
+#create-button {
   margin-bottom: 30px;
-  background-color: #2d764b;
+  background-color: #4792e3;
   color: #FFFFFF;
-  border-color: #002244;
+  border-color: #4792e3;
   height: 50px;
+
   width: 200px;
 }
 
-#create-button:hover{
-
-  background-color: #2d764b;
+#create-button:hover {
+  background-color: #e76e37;
   color: #FFFFFF;
-  border-color: #002244;
+  border-color: #e76e37;
   height: 60px;
   width: 210px;
 }
 
-#create-button:active{
+#create-button:active {
 
-  background-color: #002244;
+  background-color: #335daa;
   color: #FFFFFF;
-  border-color: #002244;
+  border-color: #335daa;
   height: 60px;
   width: 210px;
 }
 
-.button-col{
+.button-col {
   width: 50px;
 }

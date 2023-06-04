@@ -5,6 +5,7 @@ import { ForumTopicComponent } from './components/forum/forum-topic/forum-topic.
 import { CreatePostComponent } from './components/forum/create-post/create-post.component';
 import { ListPostComponent } from './components/forum/list-post/list-post.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
     {
@@ -31,6 +32,10 @@ const routes: Routes = [
     {
       path:'login',
       component: LoginComponent
+    },
+    {
+      path:'register',
+      component: RegisterComponent
     },
 
 ];

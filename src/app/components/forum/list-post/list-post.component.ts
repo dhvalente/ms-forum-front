@@ -21,7 +21,7 @@ export class ListPostComponent implements OnInit {
     private location: Location,
     private commentService : CommentService,
     private service: PostService,
-    private route: Router,
+    private router: Router,
     private routes:ActivatedRoute)
     {}
 
@@ -30,6 +30,7 @@ export class ListPostComponent implements OnInit {
     title: '',
     content: '',
     authorId: '',
+    authorName: '',
     topic: '',
   };
 

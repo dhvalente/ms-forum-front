@@ -1,25 +1,20 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-logged">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<header>
+  <nav class="navbar">
+  <div class="primeiro__grupo__navbar">
+    <a class="nav__link">Meu Perfil</a>
+    <a class="nav__link" routerLink="/forum-homepage">Inicio</a>
   </div>
-</nav>
+  <div class="segundo__grupo__navbar">
+    <a class="nav__link" routerLink="/forum-topic">Forum</a>
+    <a class="nav__link">Sobre-nos</a>
+    <a class="nav__link">Regras</a>
+    <a>
+      <div class="nav__icon">
+        <i class="bi bi-bell"></i>
+      </div>
+    </a>
+  </div>
+  </nav>
+</header>
